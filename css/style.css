@@ -1,0 +1,396 @@
+/* Importing Lato Font for menu text */
+@import url('http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic');
+
+/*------------------------------------*
+   Basic
+*------------------------------------*/
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: Lato, Arial, Helvetica, sans-serif;
+}
+a,
+a:hover {
+    text-decoration: none
+}
+a:hover {} #header_nav {
+    width: 100%;
+    height: 82px;
+    background-color: #f7f7f7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+#header_nav:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -5px;
+    background: url(../img/header-shadow.png) repeat-x;
+    width: 100%;
+    height: 5px;
+}
+
+/*------------------------------------*
+   Navigaion
+*------------------------------------*/
+
+.nav {
+    list-style: none;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+nav .logo {
+    margin-top: 5px;
+    margin-left: 10px;
+    float: left;
+}
+.nav {
+    float: right;
+    margin-top: 45px;
+    margin-right: 10px;
+}
+.nav > li,
+.nav > li > a {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    background: #5382bd;
+    float: left;
+}
+.nav > li {
+    margin-left: 13px;
+}
+.nav > li > a {
+    padding: ;
+    font-size: 20px;
+    color: #fff;
+    padding: 5px 22px;
+}
+.nav > li > a:hover {
+    background: #71a0dc;
+}
+
+/*------------------------------------*
+   Header Resizable
+*------------------------------------*/
+
+#header_nav.big-head {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    height: 44px;
+}
+.big-head nav .logo {
+    width: 30px;
+    margin-top: 3px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+}
+.big-head .nav {
+    margin-top: 8px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+}
+
+/*------------------------------------*
+   Layout Containers
+*------------------------------------*/
+
+.columnsContainer,
+footer,
+header {
+    position: relative;
+}
+.columnsContainer {
+    margin-top: 80px;
+}
+.leftColumn,
+.rightColumn {
+    padding: 1.25em;
+}
+.leftColumn p,
+.rightColumn p {
+    padding: 1em;
+    font-size: 14px;
+    color: #8e8e8e;
+    line-height: 20px
+}
+.leftColumn {
+    margin-bottom: .5em;
+}
+.inline-items {
+    margin-top: 0;
+}
+.inline-items li {
+    margin-left: 0;
+    border-left: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.inline-items li:first-child {
+    margin-left: 0;
+    border: none;
+    padding-left: 0;
+    padding-right: 10px;
+}
+.inline-items li:last-child {
+    padding-right: 0;
+}
+
+/*------------------------------------*
+   Select Styling
+*------------------------------------*/
+
+select {
+    padding: 4px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../img/select-drop.png) 96% 10px no-repeat #f1f1f1;
+    border: 0;
+    color: #919191;
+    font-size: 16px;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    margin-left: 5px;
+}
+
+/*-------------------------------------------------------*
+   target Internet Explorer 9 and Internet Explorer 10
+*--------------------------------------------------------*/
+
+
+@media screen and (min-width: 0\0) {
+    select {
+        background: none;
+        padding: 10px;
+    }
+}
+select.empty {
+    color: #919191;
+}
+select option[disabled]:first-child {
+    display: none;
+}
+
+/*------------------------------------*
+      Select Placeholder Styling
+*------------------------------------*/
+
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    
+    color: #919191;
+}
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    
+    color: #919191;
+    opacity: 1;
+}
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    
+    color: #919191;
+    opacity: 1;
+}
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    
+    color: #919191;
+}
+.input-group {
+    width: 100%;
+}
+
+/*------------------------------------*
+   Clearing Floats
+*------------------------------------*/
+
+.clearfix:after,
+.search-block ul li:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.input-group input {
+    width: 70%;
+    float: left;
+}
+.input-group select {
+    width: 25%;
+    float: left
+}
+h4 {
+    margin-bottom: 10px;
+}
+
+/*------------------------------------*
+   Search Fields
+*------------------------------------*/
+
+h4,
+.search-block input,
+.search-block ul li {
+    font-size: 16px;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-weight: 300;
+}
+.search-block input {
+    background: #f1f1f1;
+    border: 0;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+.search-block ul {
+    margin-top: 15px;
+}
+.search-block ul li {
+    margin-bottom: 8px;
+}
+.search-block ul li b {
+    font-weight: 700;
+	font-size: 20px;
+}
+.search-block ul li a {
+    display: block;
+    width: 12px;
+    height: 18px;
+    background: url(../img/delete-edit.png) no-repeat;
+    margin-top: 7px;
+    float: left;
+}
+.search-block ul li a:hover {
+    background: url(../img/delete-edit.png) no-repeat 0 -25px;
+}
+.search-block ul li a.edit {
+    margin-left: 6px;
+    background-position: -25px 0;
+}
+.search-block ul li a.edit:hover {
+    background-position: -25px -28px;
+}
+.search-block ul li input {
+    width: 120px;
+    background: none;
+    border: 1px solid #b2b2b2;
+}
+.search-block ul li label,
+.search-block ul li span {
+    float: left;
+}
+.search-block ul li label {
+    width: 150px;
+    height: 30px;
+    line-height: 30px
+}
+
+/*------------------------------------*
+   Right Oolum Content
+*------------------------------------*/
+
+.rightColumn:before {
+	position: absolute;
+    content: "";
+	top: 60px;
+    left: 0;
+    background: url(../img/vertical-seperator.png) no-repeat;
+    width: 100%;
+    height: 410px;
+}
+
+.rightColumn h4 {
+    padding: 6px 14px 0;
+}
+.rightColumn h5 {
+    font-weight: 300;
+    padding: 5px 0 5px 14px;
+}
+.rightColumn h5 strong {
+    font-weight: 600;
+}
+
+/*------------------------------------*
+  Footer
+*------------------------------------*/
+
+.folder {
+    background: #5382bd url(../img/folder.png) 6px 6px no-repeat;
+    display: block;
+    width: 283px;
+    height: 31px;
+    margin-left: 14px;
+    margin-top: 20px;
+}
+#footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 22px;
+    width: 100%;
+    background: #dddddd;
+    color: #8d8d8d;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: right;
+}
+#footer p {
+    padding: 0 5px;
+}
+/* IE 6 */
+
+* html #footer {
+    position: absolute;
+    top: expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight: document.body.clientHeight)+(ignoreMe document.documentElement.scrollTop ? document.documentElement.scrollTop: document.body.scrollTop))+'px');
+}
+
+
+/*------------------------------------*
+   MEDIA QUERIES
+*------------------------------------*/
+
+@media screen and (min-width: 47.5em) {
+    .leftColumn {
+        margin-right: 50%;
+    }
+    .rightColumn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .nav {
+        margin-top: 25px
+    }
+    .input-group input {
+        width: 63%;
+        float: left;
+    }
+    .leftColumn {
+        margin-bottom: 0;
+        padding-bottom: 0
+    }
+    .rightColumn {
+        padding-top: 0;
+    }
+}
